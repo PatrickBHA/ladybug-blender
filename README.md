@@ -14,7 +14,7 @@ in a way that they can be found by Blender (see dependencies).
 
 ## Dependencies
 
-The ladybug-blender plugin has the following dependencies:
+The ladybug-blender plugin has the following python dependencies:
 
 * [ladybug-core](https://github.com/ladybug-tools/ladybug)
 * [ladybug-geometry](https://github.com/ladybug-tools/ladybug-geometry)
@@ -24,9 +24,9 @@ The ladybug-blender plugin has the following dependencies:
 
 **Warning: We're slowly releasing an incomplete, alpha state version of the Blender port of Ladybug Tools for environmental analysis. If you're really awesome, please check it out, and when you inevitably come across a bug (like, actual bugs, not ladybugs), please let us know so we can fix it. Don't say we didn't warn you.**
 
- 1. Install Sverchok (scroll down on https://blenderbim.org/download.html - download zip and install like any other add-on)
- 2. Install Ladybug Tools (scroll down on https://blenderbim.org/download.html - download zip and install like any other add-on)
- 3. Want to display coloured points? Yes you do. [Install it](https://github.com/uhlik/bpy/blob/master/space_view3d_point_cloud_visualizer.py).
+ 1. Install Sverchok https://nortikin.github.io/sverchok/docs/installation/installation.html
+ 2. Install Ladybug Tools  new build - https://github.com/Andrej730/ladybug-blender/releases/download/ladybug-blender-240419/ladybug-blender-240419.zip, it should work with the April 2024 sverchok version.
+ 3. Want to display coloured points? Yes you do. [Install python to do it](https://github.com/uhlik/bpy/blob/master/space_view3d_point_cloud_visualizer.py).
  4. Restart Blender
 
 If you are upgrading, uninstall the old Ladybug Tools, and restart Blender, then
@@ -43,3 +43,5 @@ Things to be aware of:
  7. Objects coming from the scene need to be nested to be used in Ladybug nodes. Use the List join node with the wrap option enabled as shown in [this screenshot](https://user-images.githubusercontent.com/88302/94118359-c9a4fc00-fe90-11ea-8fea-735dc9e1326d.png)
 
 If you'd like to get a feel for it, watch [this demo video](https://www.youtube.com/watch?v=rMCuSwsF2aM).
+
+Problems with this README?  ([open issue here](https://github.com/ladybug-tools/ladybug-blender/issues/43))
